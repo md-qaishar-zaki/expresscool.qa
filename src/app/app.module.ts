@@ -8,6 +8,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ServiceComponent } from './service/service.component';
 import { ProjectComponent } from './project/project.component';
 import { ClientsComponent } from './clients/clients.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { ClientsComponent } from './clients/clients.component';
     ContactComponent,
     ServiceComponent,
     ProjectComponent,
-    ClientsComponent
+    ClientsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
