@@ -9,8 +9,8 @@ import { ServiceComponent } from './service/service.component';
 import { ProjectComponent } from './project/project.component';
 import { ClientsComponent } from './clients/clients.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeModule } from './home/home.module';
+import { FooterComponent } from './footer/footer.component'; 
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +21,12 @@ import { HomeModule } from './home/home.module';
     ProjectComponent,
     ClientsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HomeModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
