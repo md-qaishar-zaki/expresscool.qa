@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { HomeRoutingModule } from './home-routing.module';  
+import { HomeRoutingModule } from './home-routing.module';
 
 
 @NgModule({
-  declarations: [ 
+  declarations: [
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
-    SlickCarouselModule
+    HomeRoutingModule
   ],
-  exports:[ 
+  exports: [
   ]
 })
 export class HomeModule { }

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.scss']
 })
-export class HomeComponent {
+export class TestimonialsComponent {
 
   AllDetails = [
     { name: 'Anil', Email: 'anil@gmail.com', phone: '7633953813' },
@@ -35,6 +34,7 @@ export class HomeComponent {
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
+        
         }
       },
       {

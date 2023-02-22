@@ -10,6 +10,8 @@ import { ClientsComponent } from './clients/clients.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { TestimonialsComponent } from './testimonials/testimonials.component'; 
 
 @NgModule({
   declarations: [
@@ -20,11 +22,14 @@ import { AboutComponent } from './about/about.component';
     ClientsComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
