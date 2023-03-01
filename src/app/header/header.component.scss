@@ -4,6 +4,8 @@
     z-index: 997;
     height: 90px;
     border-bottom: 1px solid #fff;
+    transition: 0.8s; 
+    transform: translateY(0px);
   }
   
   @media (max-width: 575px) {
@@ -316,4 +318,12 @@
       background: rgba(255, 255, 255, 0.8);
       z-index: 9996;
     }
+  }
+
+  .sticked{
+    position: fixed;
+    width: 100%;
+    top: -20px;
+    transition: 0.3s;
+    transform: translateY(19px);
   }

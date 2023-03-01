@@ -1,0 +1,40 @@
+<section id="Additional-Services" class="Additional-Services">
+  <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
+
+    <div class="section-header">
+      <p>Additional <span>Services</span></p>
+      <h2>A duct system is also called ductwork. Planning (lay out), sizing, optimizing, detailing, and finding the <br>
+        pressure losses through a duct system is called duct design.</h2>
+    </div>
+
+    <div class=" aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="row carousel-row">
+
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem
+            *ngFor="let item of AllDetails">
+            <div
+              class="swiper-slide Additional-item d-flex flex-column justify-content-end swiper-slide-duplicate swiper-slide-duplicate-active"
+              data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+              [style.background]="'url(../../../../../assets/img/' + item.Image + ')'" [style.width.px]="527">
+              <div class="textBox">
+                <h3>{{item.serviceName}}</h3>
+                <p class="description">{{item.depreciation}}</p>
+              </div>
+
+            </div>
+          </div>
+        </ngx-slick-carousel>
+
+      </div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+          class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+          aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+          role="button" aria-label="Go to slide 3"></span>
+      </div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+
+  </div>
+</section>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

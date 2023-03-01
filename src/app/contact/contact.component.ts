@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

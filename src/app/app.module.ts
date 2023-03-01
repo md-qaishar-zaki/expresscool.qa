@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TestimonialsComponent } from './testimonials/testimonials.component'; 
+import { HomeModule } from './home/home.module';
+import { AdditionalServicesComponent } from './home/additional-services/additional-services.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +30,11 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    HomeModule
     
+  ],
+  exports:[ 
   ],
   providers: [],
   bootstrap: [AppComponent]
