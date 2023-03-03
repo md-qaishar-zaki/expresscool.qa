@@ -425,9 +425,18 @@
   }
 }
 
+.swiper-slide img {
+  width: 100%;
+}
 
+.carousel {
+  border-radius: 50% !important;
+  overflow: hidden;
+  width: 520px;
+  height: 520px;
+  border: 2px solid #5fd3fa;
+}
 
-
-
-
-
+::ng-deep .slick-list {
+  transform: scale(1) !important;
+}

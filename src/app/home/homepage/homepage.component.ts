@@ -27,4 +27,57 @@ export class HomepageComponent {
     { title:'Coil Cleaning', discription: 'The technician cleans the dust & debris from the condenser & evaporator coil.' },
     { title:'Maintenance & Repair', discription: 'We are equipped with all the latest tools to give full maintenance.' }
   ]
+
+
+  silderImg = [
+    {Image:'3'},
+    {Image:'4'},
+    {Image:'1'},
+    {Image:'2'},
+    {Image:'5'} 
+  ]
+  
+  slides = [];
+  slideConfig = {
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      }
+    ]
+  }
+
 }

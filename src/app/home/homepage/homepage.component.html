@@ -1,9 +1,8 @@
-<section id="hero" class="hero d-flex align-items-center section-bg">
+<section id="hero" class="hero d-flex align-items-center section-bg" style="background-image: url('../../../assets/img/hero-banner.jpg');">
   <div class="container">
     <div class="row justify-content-between gy-5">
       <div
-        class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
-      >
+        class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
         <h2 data-aos="fade-up" class="aos-init aos-animate">
           Welcome To<br />EXPRESS COOL
         </h2>
@@ -11,27 +10,36 @@
           Express Cool provides a complete range of services from Installation,
           Service & Maintenances of Residential and Commercial HVAC Systems.
         </p>
-        <div
-          class="d-flex aos-init aos-animate"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div class="d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
           <a href="#book-a-table" class="btn-book-a-table">Read More...</a>
-          <a
-            href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-            class="glightbox btn-watch-video d-flex align-items-center"
-            ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
-          >
+          <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+              Video</span></a>
         </div>
       </div>
-      <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-        <img
-          src="../../../assets/img/menu/slider-1.jpg"
-          class="img-fluid aos-init aos-animate"
-          alt=""
-          data-aos="zoom-out"
-          data-aos-delay="300"
-        />
+      <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start"> 
+
+          <div class="carousel-row row">
+            <div class="row carousel-row">
+
+              <ngx-slick-carousel class="carousel" [config]="slideConfig">
+  
+  
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem *ngFor="let item of silderImg">
+                      <div class="slider">
+                          <div class="row gy-4 justify-content-center"> 
+                              <div class="col-lg-12 text-center">
+                                  <!-- <img src="../../../assets/img/slider/1.jpg" alt=""> -->
+                                  <img src='{{"../../../assets/img/slider/"+ item.Image + ".jpg"}}' alt=""> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+              </ngx-slick-carousel>
+          </div>
+          </div>
+
       </div>
     </div>
   </div>
@@ -40,11 +48,7 @@
 <section id="why-us" class="why-us section-bg">
   <div class="container aos-init aos-animate" data-aos="fade-up">
     <div class="row gy-4">
-      <div
-        class="col-lg-4 aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
         <div class="why-box">
           <h3>Why Choose Yummy?</h3>
           <p>
@@ -55,9 +59,7 @@
             corporis.
           </p>
           <div class="text-center">
-            <a href="#" class="more-btn"
-              >Learn More <i class="bx bx-chevron-right"></i
-            ></a>
+            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -65,15 +67,9 @@
 
       <div class="col-lg-8 d-flex align-items-center">
         <div class="row gy-4">
-          <div
-            class="col-xl-4 aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            *ngFor="let services of service"
-          >
-            <div
-              class="icon-box d-flex flex-column justify-content-center align-items-center"
-            >
+          <div class="col-xl-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+            *ngFor="let services of service">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-clipboard-data"></i>
               <h4>{{ services.title }}</h4>
               <p>{{ services.discription }}</p>
@@ -88,23 +84,17 @@
 
 <!-- <app-about></app-about> -->
 
+<div class="section-header mt-4">
+  <p>Numbers <span>Speakers</span></p>
+</div>
 <section id="stats-counter" class="stats-counter">
   <div class="container aos-init aos-animate" data-aos="zoom-out">
-    <div class="section-header">
-      <p>Numbers <span>Speakers</span></p>
-    </div>
 
     <div class="row gy-4">
       <div class="col-lg-3 col-md-6" *ngFor="let speakers of noSpeakers">
         <div class="stats-item text-center w-100 h-100">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="232"
-            data-purecounter-duration="0"
-            class="purecounter"
-          >
-            {{ speakers.number }}</span
-          >
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">
+            {{ speakers.number }}</span>
           <p>{{ speakers.discription }}</p>
         </div>
       </div>
@@ -127,19 +117,11 @@
     </div>
 
     <div class="row gy-4">
-      <div
-        *ngFor="let service of services"
-        class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <div *ngFor="let service of services" class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate"
+        data-aos="fade-up" data-aos-delay="100">
         <div class="chef-member">
           <div class="member-img">
-            <img
-              src="../../assets/img/chefs/chefs-1.jpg"
-              class="img-fluid"
-              alt=""
-            />
+            <img src="../../assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="" />
             <div class="social">
               <a href=""><i class="bi bi-twitter"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -166,103 +148,46 @@
     </div>
 
     <div class="row g-0">
-      <div
-        class="col-lg-4 reservation-img aos-init aos-animate"
-        style="background-image: url(assets/img/reservation.jpg)"
-        data-aos="zoom-out"
-        data-aos-delay="200"
-      ></div>
+      <div class="col-lg-4 reservation-img aos-init aos-animate"
+        style="background-image: url(assets/img/reservation.jpg)" data-aos="zoom-out" data-aos-delay="200"></div>
 
       <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-        <form
-          action="forms/book-a-table.php"
-          method="post"
-          role="form"
-          class="php-email-form aos-init aos-animate"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form aos-init aos-animate"
+          data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                id="name"
-                placeholder="Your Name"
-                data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars"
-              />
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="Your Email"
-                data-rule="email"
-                data-msg="Please enter a valid email"
-              />
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email" />
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                name="phone"
-                id="phone"
-                placeholder="Your Phone"
-                data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars"
-              />
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <input
-                type="text"
-                name="date"
-                class="form-control"
-                id="date"
-                placeholder="Date"
-                data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars"
-              />
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                name="time"
-                id="time"
-                placeholder="Time"
-                data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars"
-              />
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <input
-                type="number"
-                class="form-control"
-                name="people"
-                id="people"
-                placeholder="# of people"
-                data-rule="minlen:1"
-                data-msg="Please enter at least 1 chars"
-              />
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people"
+                data-rule="minlen:1" data-msg="Please enter at least 1 chars" />
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-group mt-3">
-            <textarea
-              class="form-control"
-              name="message"
-              rows="5"
-              placeholder="Message"
-            ></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
