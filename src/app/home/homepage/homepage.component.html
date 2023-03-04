@@ -70,7 +70,7 @@
           <div class="col-xl-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
             *ngFor="let services of service">
             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-clipboard-data"></i>
+              <i class="{{services.icon}}"></i>
               <h4>{{ services.title }}</h4>
               <p>{{ services.discription }}</p>
             </div>

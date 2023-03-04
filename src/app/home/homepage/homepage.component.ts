@@ -10,9 +10,9 @@ export class HomepageComponent {
     window.scrollTo(0, 0);
   }
   service = [
-    { title: 'Heating & Water', discription: 'Our company carries out installation, service and repair of water and gas appliances.' },
-    { title: 'Installation', discription: 'Installation is the act of putting something in, a device that stays in one place, or an art piece that often involves building and different types of materials.' },
-    { title: 'Ducting', discription: 'Ducting is used to distribute airflow from your heating or cooling system throughout your home.' },
+    { icon:'bi-water' , title: 'Heating & Water', discription: 'Our company carries out installation, service and repair of water and gas appliances.' },
+    { icon:'bi-gear' , title: 'Installation', discription: 'Installation is the act of putting something in, a device that stays in one place, or an art piece that often involves building and different types of materials.' },
+    { icon:'bi-layout-wtf' , title: 'Ducting', discription: 'Ducting is used to distribute airflow from your heating or cooling system throughout your home.' },
   ]
 
   noSpeakers = [
