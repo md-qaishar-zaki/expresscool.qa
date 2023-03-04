@@ -120,18 +120,15 @@
       <div *ngFor="let service of services" class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate"
         data-aos="fade-up" data-aos-delay="100">
         <div class="chef-member">
-          <div class="member-img">
-            <img src="../../assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+          <div class="member-img"> 
+            <img src='{{"../../../assets/img/service/"+ service.image + ".jpg"}}' alt="">
           </div>
           <div class="member-info">
             <h4>{{service.title}}</h4>
             <p>{{service.discription}}</p>
+            <div class="social">
+              <a href="">LEARN MORE<i class="bi-box-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>

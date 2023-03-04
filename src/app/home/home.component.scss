@@ -223,24 +223,34 @@
   .social {
     position: absolute;
     right: -100%;
-    top: 30px;
+    bottom: 8px;
     opacity: 0;
     border-radius: 4px;
     transition: 0.5s;
     background: rgba(255, 255, 255, 0.3);
     z-index: 2;
+    border: 1px solid #00000057;
 
     a {
       transition: color 0.3s;
-      color: rgba(55, 55, 63, 0.4);
-      margin: 15px 12px;
+      color: #09aeb8 !important;
+      margin: 6px 8px;
       display: block;
       line-height: 0;
       text-align: center;
-
+      font-style: italic;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 0px;
+      display: flex;
+      align-items: center;
 
       :hover {
         color: rgba(55, 55, 63, 0.9);
+      }
+
+      i {
+        padding-left: 5px;
       }
     }
   }
@@ -250,7 +260,7 @@
   }
 
   .member-info {
-    padding: 10px 15px 20px 15px;
+    padding: 10px 15px 25px 15px;
 
     h4 {
       font-weight: 700;
@@ -434,6 +444,7 @@
   overflow: hidden;
   width: 520px;
   height: 520px;
+  padding: 0;
   border: 2px solid #5fd3fa;
 }
 

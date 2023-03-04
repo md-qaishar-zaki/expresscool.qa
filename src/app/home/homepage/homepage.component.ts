@@ -23,9 +23,9 @@ export class HomepageComponent {
   ]
 
   services = [
-    { title:'Air Filter Service', discription: 'An air filter collects the humongous amount of dust & dirt during operations.'},
-    { title:'Coil Cleaning', discription: 'The technician cleans the dust & debris from the condenser & evaporator coil.' },
-    { title:'Maintenance & Repair', discription: 'We are equipped with all the latest tools to give full maintenance.' }
+    { image:'1', title:'Air Filter Service', discription: 'An air filter collects the humongous amount of dust & dirt during operations.'},
+    { image:'2', title:'Coil Cleaning', discription: 'The technician cleans the dust & debris from the condenser & evaporator coil.' },
+    { image:'3', title:'Maintenance & Repair', discription: 'We are equipped with all the latest tools to give full maintenance.' }
   ]
 
 
@@ -45,7 +45,7 @@ export class HomepageComponent {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -55,7 +55,7 @@ export class HomepageComponent {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
 
         }
       },
@@ -65,7 +65,7 @@ export class HomepageComponent {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
         }
       },
       {
@@ -74,7 +74,7 @@ export class HomepageComponent {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
         }
       }
     ]
