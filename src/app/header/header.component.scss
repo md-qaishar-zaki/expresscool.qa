@@ -239,3 +239,13 @@ section {
     margin: 0 !important;
   } 
 }
+
+address{
+  position: absolute;
+  right: 0;
+  top: -1px;
+  font-size: 12px;
+  font-family: var(--font-secondary); 
+  font-weight: 500;
+  color: #7f7f90;  
+}
