@@ -1,28 +1,30 @@
 <header id="header" class="header d-flex align-items-center" [ngClass]="{ sticked : headerFixed }">
-  <div class="container d-flex align-items-center justify-content-between">
+  <div class="container position-relative">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="../../assets/img/logo1.png" alt="">
-      <!-- <h1>ExCool<span>.</span></h1> -->
-    </a>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../../assets/img/logo1.png" alt="">
+        <!-- <h1>ExCool<span>.</span></h1> -->
+      </a>
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a routerLink="home" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-        <li><a routerLink="about" routerLinkActive="active">About</a></li>
-        <li><a routerLink="service" routerLinkActive="active">Services</a></li>
-        <li><a routerLink="clients" routerLinkActive="active">Clients</a></li>
-        <li><a routerLink="project" routerLinkActive="active">Project</a></li>
-        <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
-      </ul>
-    </nav><!-- .navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a routerLink="about" routerLinkActive="active">About</a></li>
+          <li><a routerLink="service" routerLinkActive="active">Services</a></li>
+          <li><a routerLink="clients" routerLinkActive="active">Clients</a></li>
+          <li><a routerLink="project" routerLinkActive="active">Project</a></li>
+          <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
 
-    <a class="btn-book-a-table" href="#book-a-table">Book Today</a>
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    <address>
-      Address Doha – Qatar  Call Now (+974) 50103673  Email info@expresscool.qa
-    </address>
-  </div> 
+      <a class="btn-book-a-table" href="#book-a-table">Book Today</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+    <p class="address">
+      Address Doha – Qatar Call Now (+974) 50103673 Email info@expresscool.qa
+    </p>
+  </div>
 </header>

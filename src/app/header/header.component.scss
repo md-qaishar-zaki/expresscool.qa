@@ -240,12 +240,14 @@ section {
   } 
 }
 
-address{
-  position: absolute;
-  right: 0;
-  top: -1px;
-  font-size: 12px;
+.address{ 
+  margin: 0;
+  font-size: 11px;
   font-family: var(--font-secondary); 
-  font-weight: 500;
+  font-weight: 600;
   color: #7f7f90;  
+  text-align: end;
+  position: absolute;
+  right: 30px;
+  top: -4px;
 }
