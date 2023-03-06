@@ -1,72 +1,31 @@
 <section id="chefs" class="chefs section-bg">
-    <div class="container aos-init aos-animate" data-aos="fade-up">
-  
-      <div class="section-header">
-        <p>Our <span>services</span></p>
-        <h2>We are running a conditioning firm for five decades. <br> As time passes we are getting more advance as
-          technology is changing every day.</h2>
-      </div>
-  
-      <div class="row gy-4">
-  
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100">
-          <div class="chef-member">
-            <div class="member-img">
-              <img src="../../assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Air Filter Service</h4>
-              <p>An air filter collects the humongous amount of dust & dirt during operations.</p>
-            </div>
-          </div>
-        </div><!-- End Chefs Member -->
-  
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="200">
-          <div class="chef-member">
-            <div class="member-img">
-              <img src="../../assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Coil Cleaning</h4>
-              <p>The technician cleans the dust & debris from the condenser & evaporator coil.</p>
-            </div>
-          </div>
-        </div><!-- End Chefs Member -->
-  
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="300">
-          <div class="chef-member">
-            <div class="member-img">
-              <img src="../../assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Maintenance & Repair</h4>
-              <p>We are equipped with all the latest tools to give full maintenance.</p>
-            </div>
-          </div>
-        </div><!-- End Chefs Member -->
-  
-      </div>
-  
+  <div class="container aos-init aos-animate" data-aos="fade-up">
+    <div class="section-header">
+      <p>Our <span>services</span></p>
+      <h2>
+        We are running a conditioning firm for five decades. <br />
+        As time passes we are getting more advance as technology is changing
+        every day.
+      </h2>
     </div>
+
+    <div class="row gy-4">
+      <div *ngFor="let service of services" class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate"
+        data-aos="fade-up" data-aos-delay="100">
+        <div class="chef-member">
+          <div class="member-img"> 
+            <img src='{{"../../../assets/img/service/"+ service.image + ".jpg"}}' alt="">
+          </div>
+          <div class="member-info">
+            <h4>{{service.title}}</h4>
+            <p>{{service.discription}}</p>
+            <div class="social">
+              <a href="">LEARN MORE<i class="bi-box-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Chefs Member -->
+    </div>
+  </div>
 </section>

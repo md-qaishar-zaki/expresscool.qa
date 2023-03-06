@@ -86,3 +86,15 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+::ng-deep {
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #838392;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #09787e;
+    opacity: 0.75;
+  }
+}

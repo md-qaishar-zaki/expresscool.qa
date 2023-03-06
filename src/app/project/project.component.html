@@ -1,1 +1,58 @@
-<app-testimonials></app-testimonials>
+<section id="testimonials" class="testimonials section-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-header">
+            <p>Our <span>Project</span></p>
+            <h2>Our Scope of Work</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row carousel-row">
+                    <div class="section-header">
+                        <p><span>Ongoing</span></p>
+                    </div>
+                    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        
+        
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem
+                            *ngFor="let item of Ongoing">
+                            <div class="testimonial-item">
+                                <div class="row gy-4 justify-content-center"> 
+                                    <div class="col-lg-12 text-center"> 
+                                        <img src='{{"../../assets/img/Ongoing-Project/"+ item.image +".jpg"}}' class="img-fluid" alt="">
+                                        <h2>{{item.title}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </ngx-slick-carousel>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row carousel-row">
+                    <div class="section-header">
+                        <p><span>Completed</span></p>
+                    </div>
+                    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        
+        
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem
+                            *ngFor="let item of Completed">
+                            <div class="testimonial-item">
+                                <div class="row gy-4 justify-content-center"> 
+                                    <div class="col-lg-12 text-center"> 
+                                        <img src='{{"../../assets/img/Completed-Project/"+ item.image +".jpg"}}' class="img-fluid" alt="">
+                                        <h2>{{item.title}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </ngx-slick-carousel>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>

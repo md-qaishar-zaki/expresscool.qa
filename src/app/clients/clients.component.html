@@ -1,1 +1,17 @@
-<p>clients works!</p>
+<section id="Clients" class="container"> 
+
+    <div class="section-header"> 
+        <p><span>clients</span></p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-6 col-sm-4 col-md-3 text-center" *ngFor="let image of client">
+            <div class="box-ctn">
+                <!-- <img src="../../assets/img/client/1.jpg" style="width:100%;"> -->
+                <img src='{{"../../assets/img/client/" + image.clientImg + ".jpg" }}' alt="" class="w-100">
+            </div>
+        </div>
+
+    </div>
+</section>
