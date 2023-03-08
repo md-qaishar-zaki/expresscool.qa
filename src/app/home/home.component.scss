@@ -37,8 +37,8 @@
   }
 
   .btn-book-a-table:hover {
-    background: rgba(206, 18, 18, 0.8);
-    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+    background: rgba(9, 174, 184, 0.8);
+    box-shadow: 0 8px 28px rgba(9, 174, 184, 0.45);
   }
 
   .btn-watch-video {
@@ -61,7 +61,7 @@
     color: var(--color-primary);
 
     i {
-      color: rgba(206, 18, 18, 0.8);
+      color: rgba(9, 174, 184, 0.8);
     }
   }
 
@@ -451,10 +451,16 @@
 ::ng-deep .slick-list {
   transform: scale(1) !important;
 }
+ 
 
+@media (max-width: 1024px) {
+  .carousel {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
 
-
-@media (min-width: 320px) and (max-width: 375px) {
+@media (max-width: 991px) {
 
   .carousel {
     height: 200px !important;
@@ -465,11 +471,8 @@
     justify-content: center;
 
   }
-}
-
-@media (max-width: 1024px) {
-  .carousel {
-    width: 300px !important;
-    height: 300px !important;
+  .hero .btn-book-a-table { 
+    font-size: 11px !important; 
+    padding: 7px 10px !important;
   }
 }
