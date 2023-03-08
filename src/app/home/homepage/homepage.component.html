@@ -1,42 +1,44 @@
-<section id="hero" class="hero d-flex align-items-center section-bg" style="background-image: url('../../../assets/img/hero-banner.jpg');">
+<section id="hero" class="hero d-flex align-items-center section-bg"
+  style="background-image: url('../../../assets/img/hero-banner.jpg');">
   <div class="container">
     <div class="row justify-content-between gy-5">
       <div
         class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-        <h2 data-aos="fade-up" class="aos-init aos-animate">
+        <h2 class="">
           Welcome To<br />EXPRESS COOL
         </h2>
-        <p data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+        <p class="">
           Express Cool provides a complete range of services from Installation,
           Service & Maintenances of Residential and Commercial HVAC Systems.
         </p>
-        <div class="d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <div class="d-flex ">
           <a href="/#/service" class="btn-book-a-table">Read More...</a>
-           
+
         </div>
       </div>
-      <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start"> 
+      <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
 
-          <div class="carousel-row row">
-            <div class="row carousel-row">
+        <div class="carousel-row row">
+          <div class="row carousel-row">
 
-              <ngx-slick-carousel class="carousel" [config]="slideConfig">
-  
-  
-                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem *ngFor="let item of silderImg">
-                      <div class="slider">
-                          <div class="row gy-4 justify-content-center"> 
-                              <div class="col-lg-12 text-center">
-                                  <!-- <img src="../../../assets/img/slider/1.jpg" alt=""> -->
-                                  <img src='{{"../../../assets/img/slider/"+ item.Image + ".jpg"}}' alt=""> 
-                              </div>
-                          </div>
-                      </div>
+            <ngx-slick-carousel class="carousel" [config]="slideConfig">
+
+
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem
+                *ngFor="let item of silderImg">
+                <div class="slider">
+                  <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-12 text-center">
+                      <!-- <img src="../../../assets/img/slider/1.jpg" alt=""> -->
+                      <img src='{{"../../../assets/img/slider/"+ item.Image + ".jpg"}}' alt="">
+                    </div>
                   </div>
-  
-              </ngx-slick-carousel>
+                </div>
+              </div>
+
+            </ngx-slick-carousel>
           </div>
-          </div>
+        </div>
 
       </div>
     </div>
@@ -44,17 +46,15 @@
 </section>
 
 <section id="why-us" class="why-us section-bg">
-  <div class="container aos-init aos-animate" data-aos="fade-up">
+  <div class="container ">
     <div class="row gy-4">
-      <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 ">
         <div class="why-box">
-          <h3>Why Choose Yummy?</h3>
+          <h3>Commitment to Your Needs</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-            aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur
-            quia eos. Autem tempore quibusdam vel necessitatibus optio ad
-            corporis.
+            Our mission statement is: “To provide a world-class customer experience, save you money, and create more
+            comfort in your home while servicing your heating/cooling systems.” We will help
+            you find the most affordable solutions and tailor our services to fit your specific needs.
           </p>
           <div class="text-center">
             <a href="/#/about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -65,8 +65,7 @@
 
       <div class="col-lg-8 d-flex align-items-center">
         <div class="row gy-4">
-          <div class="col-xl-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
-            *ngFor="let services of service">
+          <div class="col-xl-4 " *ngFor="let services of service">
             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
               <i class="{{services.icon}}"></i>
               <h4>{{ services.title }}</h4>
@@ -85,8 +84,9 @@
 <div class="section-header mt-4">
   <p>Numbers <span>Speakers</span></p>
 </div>
+
 <section id="stats-counter" class="stats-counter">
-  <div class="container aos-init aos-animate" data-aos="zoom-out">
+  <div class="container">
 
     <div class="row gy-4">
       <div class="col-lg-3 col-md-6" *ngFor="let speakers of noSpeakers">
@@ -104,7 +104,7 @@
 <app-additional-services></app-additional-services>
 
 <section id="chefs" class="chefs section-bg">
-  <div class="container aos-init aos-animate" data-aos="fade-up">
+  <div class="container ">
     <div class="section-header">
       <p>Our <span>services</span></p>
       <h2>
@@ -115,10 +115,9 @@
     </div>
 
     <div class="row gy-4">
-      <div *ngFor="let service of services" class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate"
-        data-aos="fade-up" data-aos-delay="100">
+      <div *ngFor="let service of services" class="col-lg-4 col-md-6 d-flex align-items-stretch ">
         <div class="chef-member">
-          <div class="member-img"> 
+          <div class="member-img">
             <img src='{{"../../../assets/img/service/"+ service.image + ".jpg"}}' alt="">
           </div>
           <div class="member-info">
@@ -135,20 +134,18 @@
   </div>
 </section>
 
-<section id="book-a-table" class="book-a-table">
-  <div class="container aos-init aos-animate" data-aos="fade-up">
+<section id="book-a-table" class="book-a-table" >
+  <div class="container ">
     <div class="section-header">
       <h2>Book A Table</h2>
       <p>Book <span>Your Stay</span> With Us</p>
     </div>
 
     <div class="row g-0">
-      <div class="col-lg-4 reservation-img aos-init aos-animate"
-        style="background-image: url(assets/img/reservation.jpg)" data-aos="zoom-out" data-aos-delay="200"></div>
+      <div class="col-lg-4 reservation-img " style="background-image: url(assets/img/reservation.jpg)"></div>
 
       <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-        <form action=" " method=" " role="form" class="php-email-form aos-init aos-animate"
-          data-aos="fade-up" data-aos-delay="100">
+        <form action=" " method=" " role="form" class="php-email-form ">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"

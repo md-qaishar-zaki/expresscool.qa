@@ -1,5 +1,5 @@
 <section id="Additional-Services" class="Additional-Services">
-  <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
+  <div class="container-fluid aos-init aos-animate">
     <div class="section-header">
       <p>Additional <span>Services</span></p>
       <h2>
@@ -9,16 +9,15 @@
       </h2>
     </div>
 
-    <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+    <div class="aos-init aos-animate">
       <div class="carousel-row row">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
           <div class="col-md-4" *ngFor="let item of AllDetails">
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" ngxSlickItem>
-              <div class="swiper-slide Additional-item d-flex flex-column justify-content-end swiper-slide-duplicate swiper-slide-duplicate-active"
-                data-swiper-slide-index="1"
-                role="group"
-                aria-label="2 / 3"
-                [style.background]="'url(../../../../../assets/img/' + item.Image + ')' " [style.width.%]="100" >
+              <div
+                class="swiper-slide Additional-item d-flex flex-column justify-content-end swiper-slide-duplicate swiper-slide-duplicate-active"
+                data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                [style.background]="'url(../../../../../assets/img/' + item.Image + ')' " [style.width.%]="100">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="textBox">
@@ -32,34 +31,13 @@
           </div>
         </ngx-slick-carousel>
       </div>
-      <div
-        class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
-      >
-        <span
-          class="swiper-pagination-bullet"
-          tabindex="0"
-          role="button"
-          aria-label="Go to slide 1"
-        ></span
-        ><span
-          class="swiper-pagination-bullet swiper-pagination-bullet-active"
-          tabindex="0"
-          role="button"
-          aria-label="Go to slide 2"
-          aria-current="true"
-        ></span
-        ><span
-          class="swiper-pagination-bullet"
-          tabindex="0"
-          role="button"
-          aria-label="Go to slide 3"
-        ></span>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+          class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+          aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+          role="button" aria-label="Go to slide 3"></span>
       </div>
-      <span
-        class="swiper-notification"
-        aria-live="assertive"
-        aria-atomic="true"
-      ></span>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
     </div>
   </div>
 </section>

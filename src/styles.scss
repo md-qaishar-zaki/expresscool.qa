@@ -360,7 +360,7 @@ a {
 
   .mobile-nav-active .navbar {
     right: 0;
-    position: absolute !important;
+    position: fixed !important;
   }
 
   .mobile-nav-active .navbar:before {

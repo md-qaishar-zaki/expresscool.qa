@@ -26,12 +26,14 @@ export class HeaderComponent {
       $('.mobile-nav-show').addClass('d-none'); 
       $('.mobile-nav-hide').removeClass('d-none');       
       $('.header').addClass('sticked');  
+      $('.navbar').addClass('showNav');  
     })
 
     $('.mobile-nav-hide').click(function () {
       $('body').removeClass('mobile-nav-active');      
       $('.mobile-nav-hide').addClass('d-none'); 
       $('.mobile-nav-show').removeClass('d-none');  
+      $('.navbar').removeClass('showNav');  
     }) 
 
     $('.navbar ul li a').click(function () { 

@@ -407,10 +407,12 @@
       color: #fff;
       transition: 0.4s;
       border-radius: 50px;
+      font-weight: 600;
     }
 
     button[type=submit]:hover {
-      background: #ec2727;
+      opacity: 0.8;
+      color: #000;
     }
   }
 }

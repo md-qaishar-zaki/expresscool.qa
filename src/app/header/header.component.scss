@@ -2,7 +2,7 @@
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 90px;
+  height: 106px;
   border-bottom: 1px solid #fff;
   transition: 0.8s;
   transform: translateY(0px);
@@ -20,7 +20,7 @@
 }
 
 .header .logo img {
-  max-height: 75px;
+  max-height: 90px;
   margin-right: 6px;
 }
 
@@ -227,30 +227,38 @@ section {
 
 @media (max-width: 991px) {
   .logo img {
-    max-height: 48px !important;
+    max-height: 76px !important;
   }
 
   .header .btn-book-a-table,
   .header .btn-book-a-table:focus {
     font-size: 12px !important;
-    padding: 7px !important; 
+    padding: 7px !important;
     width: 100% !important;
     margin: 0 !important;
     text-align: center;
   }
 
   .address {
-    font-size: 7px !important;
-    bottom: -12px !important;
+    font-size: 11px !important;
+    bottom: -6px !important;
     top: unset !important;
   }
+
+  .navbar {
+    opacity: 0;
+  }
+}
+
+.showNav {
+  opacity: 1 !important;
 }
 
 .address {
   margin: 0;
-  font-size: 11px;
+  font-size: 14px;
   font-family: var(--font-secondary);
-  font-weight: 600;
+  font-weight: 500;
   color: #00747b;
   text-align: end;
   position: absolute;
